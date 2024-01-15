@@ -1,0 +1,235 @@
+/* Shared style  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.orange-title {
+    color: #FF5400;
+}
+
+.button-primary {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 1rem 2.25rem;
+    cursor: pointer;
+}
+.title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.description{
+    color: rgba(19, 19, 24, 0.70);
+}
+
+/* header styles  */
+/* nav  */
+nav {
+    display: flex;
+    width: 1170px;
+    margin: 3.25rem auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.branding img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.branding h2 {
+    font-size: 2.25rem;
+    margin-left: 1rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+nav > ul {
+    display: flex;
+    gap: 2.75rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+#menu-bar {
+    display: none;
+}
+
+nav > label {
+    display: none;
+}
+
+/* banner  */
+.banner {
+    width: 1170px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    margin-bottom: 6.25rem;
+}
+
+.banner h2 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+}
+
+.banner p {
+    color: white;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    width: 676px;
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    gap: 1.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.input-box input,
+select {
+    color: rgba(19, 19, 24, 0.50);
+    padding: 1rem 2.25rem 1rem 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* popular tour section style  */
+.popular-tours{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+.popular-tours-content, .popular-tours-img{
+    width: calc((100% - 40px) / 2);
+}
+.popular-tours-img img{
+    width: 100%;
+}
+.popular-tours-content p{
+    margin: 1.5rem auto;
+}
+.popular-tours-content li{
+    margin: 10px 0;
+    margin-left: 20px;
+}
+.popular-tours-content > button{
+    margin-top: 2rem;
+}
+
+/* destination chose section style */
+.destination-chose{
+    width: 1170px;
+    margin: 100px auto;
+}
+
+
+
+/* responsive for mobile  */
+@media screen and (max-width: 600px) {
+    nav>label {
+        display: initial;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav,
+    .banner {
+        width: calc(100% - 60px);
+        margin: 25px auto;
+        height: fit-content;
+    }
+    #menu-bar:checked ~ nav ul{
+        display: initial;
+    }
+
+    .banner {
+        padding: 30px 20px;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    .banner p {
+        width: 100%;
+    }
+    .popular-tours{
+        width: calc(100% - 20px);
+        margin: 20px auto;
+    }
+    .popular-tours-content, .popular-tours-img{
+        width: 100%;
+    }
+
+    .input-box, .popular-tours {
+        flex-direction: column;
+    }
+    
+    
+}
+
+/* responsive for tablet  */
+@media screen and (min-width: 600.01px) and (max-width: 992px) {
+    nav{
+        gap: 20px;
+    }
+    nav,
+    .banner {
+        width: calc(100% - 80px);
+        margin: 25px auto;
+        height: fit-content;
+    }
+    .banner p {
+        width: 100%;
+    }
+    .input-box, .popular-tours {
+        flex-direction: column;
+    }
+    .banner {
+        padding: 30px 20px;
+        background-position-x: center;
+        background-size: cover;
+    }
+    .popular-tours{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .popular-tours-content, .popular-tours-img{
+        width: 100%;
+    }
+}
