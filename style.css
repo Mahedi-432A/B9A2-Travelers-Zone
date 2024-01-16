@@ -19,15 +19,18 @@
     padding: 1rem 2.25rem;
     cursor: pointer;
 }
-.title{
+
+.title {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
 }
-.description{
+
+.description {
     color: rgba(19, 19, 24, 0.70);
 }
-.white-title{
+
+.white-title {
     color: white;
     font-size: 1.75rem;
     font-weight: 800;
@@ -60,7 +63,7 @@ nav {
     color: #131318;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     gap: 2.75rem;
 }
@@ -80,7 +83,7 @@ nav ul li a {
     display: none;
 }
 
-nav > label {
+nav>label {
     display: none;
 }
 
@@ -133,50 +136,61 @@ select {
 }
 
 /* popular tour section style  */
-.popular-tours{
+.popular-tours {
     width: 1170px;
     margin: 0 auto;
     display: flex;
     gap: 40px;
 }
-.popular-tours-content, .popular-tours-img{
+
+.popular-tours-content,
+.popular-tours-img {
     width: calc((100% - 40px) / 2);
 }
-.popular-tours-img img{
+
+.popular-tours-img img {
     width: 100%;
 }
-.popular-tours-content p{
+
+.popular-tours-content p {
     margin: 1.5rem auto;
 }
-.popular-tours-content li{
+
+.popular-tours-content li {
     margin: 10px 0;
     margin-left: 20px;
 }
-.popular-tours-content > button{
+
+.popular-tours-content>button {
     margin-top: 2rem;
 }
 
 /* destination chose section style */
-.destination-chose{
+.destination-chose {
     width: 1170px;
     margin: 100px auto;
 }
-.destination-chose-content{
+
+.destination-chose-content {
     width: 650px;
     margin: 0 auto;
     margin-bottom: 48px;
     text-align: center;
 }
-.destination-chose-content p{
+
+.destination-chose-content p {
     margin-top: 16px;
 }
-.destination-area-1{
+
+.destination-area-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin: 24px 0;
 }
-.destination-area-1 .div-1, .div-2{
+
+.destination-area-1 .div-1,
+.div-2 {
     width: 100%;
     height: 300px;
     text-align: center;
@@ -184,163 +198,317 @@ select {
     background-repeat: no-repeat;
     border-radius: 16px;
 }
-.destination-area-1 .div-1{
+
+.destination-area-1 .div-1 {
     background-image: url(Images/Rectangle\ 5.png);
 }
-.destination-area-1 .div-1 h3, .div-2 h3{
+
+.destination-area-1 .div-1 h3,
+.div-2 h3 {
     margin-top: 120px;
 }
-.destination-area-1 .div-2{
+
+.destination-area-1 .div-2 {
     background-image: url(Images/Rectangle\ 8.png);
 }
-.destination-area-2{
+
+.destination-area-2 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 24px;
     margin: 24px 0;
     text-align: center;
 }
-.destination-area-2 .div-3,.div-4, .div-5{
+
+.destination-area-2 .div-3,
+.div-4,
+.div-5 {
     width: 100%;
     height: 300px;
     background-size: cover;
     border-radius: 16px;
 }
-.destination-area-2 .div-3, .div-5{
+
+.destination-area-2 .div-3,
+.div-5 {
     background-position-y: center;
 }
-.destination-area-2 .div-3{
+
+.destination-area-2 .div-3 {
     background-image: url(Images/Rectangle\ 6.png);
 }
-.destination-area-2 .div-5{
+
+.destination-area-2 .div-5 {
     background-image: url(Images/Rectangle\ 9.png);
 }
-.destination-area-2 .div-4{
+
+.destination-area-2 .div-4 {
     background-image: url(Images/Rectangle\ 7.png);
     background-position-x: center;
 }
-.destination-area-2 .div-3 h3,.div-4 h3, .div-5 h3{
+
+.destination-area-2 .div-3 h3,
+.div-4 h3,
+.div-5 h3 {
     margin-top: 130px;
 }
-.destination-area-3{
+
+.destination-area-3 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 24px;
 }
-.destination-area-3 .div-6, .div-7{
+
+.destination-area-3 .div-6,
+.div-7 {
     width: 100%;
     height: 300px;
     border-radius: 16px;
     text-align: center;
 }
-.destination-area-3 .div-6{
+
+.destination-area-3 .div-6 {
     background-image: url(Images/Rectangle\ 11.png);
 }
-.destination-area-3 .div-7{
+
+.destination-area-3 .div-7 {
     background-image: url(Images/Rectangle\ 10.png);
     background-position-x: center;
     background-size: cover;
 }
-.destination-area-3 .div-6 h3, .div-7 h3{
+
+.destination-area-3 .div-6 h3,
+.div-7 h3 {
     margin-top: 125px;
 }
 
-
-/* responsive for mobile  */
-@media screen and (max-width: 600px) {
-    nav>label {
-        display: initial;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav,
-    .banner {
-        width: calc(100% - 60px);
-        margin: 25px auto;
-        height: fit-content;
-    }
-    #menu-bar:checked ~ nav ul{
-        display: initial;
-    }
-
-    .banner {
-        padding: 30px 20px;
-        background-position-x: center;
-        background-size: cover;
-    }
-
-    .banner p {
-        width: 100%;
-    }
-    .popular-tours, .destination-chose{
-        width: calc(100% - 20px);
-        margin: 20px auto;
-    }
-    .popular-tours-content, .popular-tours-img, 
-    .destination-chose-content{
-        width: 100%;
-    }
-
-    .input-box, .popular-tours {
-        flex-direction: column;
-    }
-    .destination-area-1, .destination-area-2, 
-    .destination-area-3{
-        grid-template-columns: 1fr;
-    }
-    .destination-area-1 .div-1, .div-2{
-        background-position-y: center;
-        background-size: cover;
-    }
-    .destination-area-3 .div-6{
-        background-position-x: center;
-        background-size: cover;
-    }
-    
+/* why chose us section  */
+.why-chose {
+    width: 1170px;
+    margin: 0 auto;
 }
 
-/* responsive for tablet  */
-@media screen and (min-width: 600.01px) and (max-width: 992px) {
-    nav{
-        gap: 20px;
-    }
-    nav,
-    .banner {
-        width: calc(100% - 80px);
-        margin: 25px auto;
-        height: fit-content;
-    }
-    .banner p {
-        width: 100%;
-    }
-    .input-box, .popular-tours {
-        flex-direction: column;
-    }
-    .banner {
-        padding: 30px 20px;
-        background-position-x: center;
-        background-size: cover;
-    }
-    .popular-tours, .destination-chose{
-        width: calc(100% - 40px);
-        margin: 0 auto;
-    }
-    .popular-tours-content, .popular-tours-img{
-        width: 100%;
-    }
-    .destination-chose-content{
-        margin-top: 40px;
-    }
-    .destination-area-1, .destination-area-2, 
-    .destination-area-3{
-        grid-template-columns: 1fr;
-    }
-    .destination-area-1 .div-1, .div-2, 
-    .destination-area-3 .div-6{
-        background-position-x: center;
-        background-size: cover;
-    }
+.why-chose-content {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.why-chose-content p {
+    margin-top: 16px;
+}
+
+.why-chose-card-container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.why-chose-card-container-2 {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.why-chose-card-container .card-1,
+.card-2 {
+    width: 490px;
+    padding: 32px;
+    padding-right: 48px;
+}
+
+.why-chose-card-container .card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.why-chose-card-container .card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.why-chose-card-container .card-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 16px 0;
+}
+
+.why-chose-card-container .card-description {
+    color: #5A5A5D;
+}
+
+.why-chose-card-container .card-1 .icon,
+.card-2 .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.why-chose-card-container .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* simple perfect section styles  */
+.simple-perfect {
+    width: 1170px;
+    margin: 100px auto;
+    display: flex;
+    gap: 24px;
+}
+
+.simple-perfect-content,
+.simple-perfect-img {
+    width: calc((100% - 24px) / 2);
+}
+
+.simple-perfect-img {
+    background-image: url(Images/Group\ 40089.png);
+    background-position-y: center;
+    background-size: cover;
+    align-items: center;
+    height: 424px;
+    border-radius: 16px;
+}
+
+.simple-perfect-img h3 {
+    text-align: center;
+    margin-top: 190px;
+
+}
+
+.simple-perfect-content p {
+    margin: 16px 0;
+}
+
+.simple-perfect-content ul {
+    margin: 24px 0;
+}
+
+.simple-perfect-content ul li {
+    color: #131318;
+    font-weight: 700;
+    margin: 12px 0;
+    margin-left: 16px;
+}
+
+/* Newsletter Section style  */
+.newsletter {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter-content {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-content-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter-content-description {
+    color: #5A5A5D;
+    margin: 24px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    ;
+}
+
+.newsletter-content input {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 16px 0;
+    padding: 16px 20px;
+    color: rgba(19, 19, 24, 0.30);
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-content button {
+    width: 100%;
+    margin-top: 24px;
+}
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img-box {
+    padding: 20px 30px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    transform: rotate(-35deg);
+}
+.newsletter-img-box p{
+    color: white;
+    font-size: 24px;
+}
+.newsletter-img-box h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* footer section style  */
+footer{
+    margin-top: 100px;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(19, 19, 24, 0.05);
+}
+footer .logo{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+}
+footer .logo h2{
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 16px;
+}
+footer .logo img{
+    height: 36px;
+}
+footer .p-1{
+    color: #5A5A5D;
+    width: 770px;
+    margin: 16px auto;
+    text-align: center;
+}
+.footer-icon{
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    margin: 32px auto;
+}
+.footer-icon i{
+    font-size: 24px;
+}
+footer .p-2{
+    color: #131318;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    border-top: 1px solid rgba(19, 19, 24, 0.10);;
+    font-weight: 300;
 }

@@ -1,0 +1,72 @@
+/* responsive for mobile  */
+@media screen and (max-width: 600px) {
+
+    /* shared style  */
+    .title{
+        font-size: 22px;
+    }
+    .description{
+        font-size: 14px;
+    }
+
+    /* nav style  */
+    nav{
+        width: 95vw;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    nav > ul{
+        display: none;
+    }
+    nav > label{
+        flex-direction: column;
+        display: initial;
+    }
+    .branding img{
+        height: 25px;
+        width: 25px;
+    }
+    .branding h2{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    /* banner of header  */
+    .banner{
+        width: 95vw;
+        height: fit-content;
+        background-position-y: center;
+        background-size: cover;
+        margin-bottom: 36px;
+    }
+    .banner h2{
+        font-size: 22px;
+    }
+    .banner p{
+        width: 90%;
+    }
+    .input-box{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    /* popular tour section  */
+    .popular-tours{
+        width: 95vw;
+        flex-direction: column;
+    }
+    .popular-tours-content {
+        width: 90%;
+        margin: auto;
+    }
+    .popular-tours-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* destination chose section  */
+    .destination-chose{
+        width: 95vw;
+        margin: 30px auto;
+    }
+}
