@@ -27,6 +27,11 @@
 .description{
     color: rgba(19, 19, 24, 0.70);
 }
+.white-title{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
 
 /* header styles  */
 /* nav  */
@@ -156,7 +161,89 @@ select {
     width: 1170px;
     margin: 100px auto;
 }
-
+.destination-chose-content{
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.destination-chose-content p{
+    margin-top: 16px;
+}
+.destination-area-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px 0;
+}
+.destination-area-1 .div-1, .div-2{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.destination-area-1 .div-1{
+    background-image: url(Images/Rectangle\ 5.png);
+}
+.destination-area-1 .div-1 h3, .div-2 h3{
+    margin-top: 120px;
+}
+.destination-area-1 .div-2{
+    background-image: url(Images/Rectangle\ 8.png);
+}
+.destination-area-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 24px;
+    margin: 24px 0;
+    text-align: center;
+}
+.destination-area-2 .div-3,.div-4, .div-5{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 16px;
+}
+.destination-area-2 .div-3, .div-5{
+    background-position-y: center;
+}
+.destination-area-2 .div-3{
+    background-image: url(Images/Rectangle\ 6.png);
+}
+.destination-area-2 .div-5{
+    background-image: url(Images/Rectangle\ 9.png);
+}
+.destination-area-2 .div-4{
+    background-image: url(Images/Rectangle\ 7.png);
+    background-position-x: center;
+}
+.destination-area-2 .div-3 h3,.div-4 h3, .div-5 h3{
+    margin-top: 130px;
+}
+.destination-area-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+.destination-area-3 .div-6, .div-7{
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    text-align: center;
+}
+.destination-area-3 .div-6{
+    background-image: url(Images/Rectangle\ 11.png);
+}
+.destination-area-3 .div-7{
+    background-image: url(Images/Rectangle\ 10.png);
+    background-position-x: center;
+    background-size: cover;
+}
+.destination-area-3 .div-6 h3, .div-7 h3{
+    margin-top: 125px;
+}
 
 
 /* responsive for mobile  */
@@ -188,18 +275,30 @@ select {
     .banner p {
         width: 100%;
     }
-    .popular-tours{
+    .popular-tours, .destination-chose{
         width: calc(100% - 20px);
         margin: 20px auto;
     }
-    .popular-tours-content, .popular-tours-img{
+    .popular-tours-content, .popular-tours-img, 
+    .destination-chose-content{
         width: 100%;
     }
 
     .input-box, .popular-tours {
         flex-direction: column;
     }
-    
+    .destination-area-1, .destination-area-2, 
+    .destination-area-3{
+        grid-template-columns: 1fr;
+    }
+    .destination-area-1 .div-1, .div-2{
+        background-position-y: center;
+        background-size: cover;
+    }
+    .destination-area-3 .div-6{
+        background-position-x: center;
+        background-size: cover;
+    }
     
 }
 
@@ -225,11 +324,23 @@ select {
         background-position-x: center;
         background-size: cover;
     }
-    .popular-tours{
+    .popular-tours, .destination-chose{
         width: calc(100% - 40px);
         margin: 0 auto;
     }
     .popular-tours-content, .popular-tours-img{
         width: 100%;
+    }
+    .destination-chose-content{
+        margin-top: 40px;
+    }
+    .destination-area-1, .destination-area-2, 
+    .destination-area-3{
+        grid-template-columns: 1fr;
+    }
+    .destination-area-1 .div-1, .div-2, 
+    .destination-area-3 .div-6{
+        background-position-x: center;
+        background-size: cover;
     }
 }
